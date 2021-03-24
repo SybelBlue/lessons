@@ -128,3 +128,9 @@ module Codewars where
 -- substrings [] = []
 -- substrings ls = tail (inits ls) ++ substrings (tail ls)
 
+-- descendingOrZero = reverse . greaterFilter Nothing . reverse
+--   where greaterFilter _        []     = []
+--         greaterFilter Nothing  (a:ab) = a : greaterFilter (Just a) ab
+--         greaterFilter (Just g) (a:ab) = e : greaterFilter (Just v) ab
+--             where (e, v) = if g >= a then (0, g) else (a, a)
+
